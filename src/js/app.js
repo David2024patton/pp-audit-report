@@ -420,7 +420,7 @@
   function evidenceList(items) {
     if (!items || !items.length) return '<p class="empty-state" style="padding:.4rem 0">// NOT OBSERVED IN CRAWL</p>';
     return '<ul>' + items.map(function (it) {
-      return '<li><span class="ev-text">' + esc(it.text) + '</span>' + srcLink(it.source_url) + '</li>';
+      return '<li><span class="ev-text">' + esc(it.text) + '</span>' + (it.evidence_method === 'manual' ? '<span class="ev-method">MANUAL</span>' : '') + srcLink(it.source_url) + '</li>';
     }).join('') + '</ul>';
   }
 
@@ -444,7 +444,6 @@
     var crawl = (c.digital_presence && c.digital_presence.crawl_status) || 'ok';
     var ev = EVIDENCE_GROUPS.map(function (g) {
       var items = (c.evidence && c.evidence[g[0]]) || [];
-      if (!items.length) return '';
       return '<div><h4>// ' + g[1] + '</h4>' + evidenceList(items) + '</div>';
     }).join('');
     return '<article class="dossier" role="listitem">' +
@@ -453,7 +452,7 @@
         '<h3 class="dossier-name">' + esc(c.name) + '</h3>' +
         '<p class="dossier-sub">' + market + ' <span class="eyebrow-sep">//</span> ' + esc(c.domain || '') + '</p></div>' +
         '<div class="dossier-badges"><span class="threat-badge" data-sev="' + sev + '">THREAT: ' + THREAT_LABEL[sev] + '</span>' +
-        '<span class="crawl-led" data-crawl="' + crawl + '">CRAWL: ' + crawl + '</span></div>' +
+        '<span class="crawl-led" data-crawl="' + crawl + '">CRAWL: ' + crawl + '</span>' + (crawl !== 'ok' ? '<span class="verify-manual">VERIFY MANUALLY</span>' : '') + '</div>' +
       '</div>' +
       '<button type="button" class="dossier-btn" aria-expanded="false" aria-controls="dos-' + esc(id) + '">' +
         '<span class="fx-caret" aria-hidden="true">▸</span><span class="dossier-more">EVIDENCE DOSSIER</span></button>' +
@@ -520,6 +519,7 @@
     var parts = [];
     if (m.crawl_engine) parts.push('ENGINE: <b>' + esc(m.crawl_engine) + '</b>' + (m.crawl_version ? ' v' + esc(m.crawl_version) : ''));
     if (m.domain_count != null) parts.push('DOMAINS: <b>' + m.domain_count + '</b>');
+    if (m.wa_count != null && m.az_count != null) parts.push('TRACKS: <b>WA ' + m.wa_count + ' / AZ ' + m.az_count + '</b>');
     if (m.crawled_at) parts.push('CRAWLED: <b>' + esc(m.crawled_at) + '</b>');
     if (m.validator) parts.push('VALIDATOR: <b>' + esc(m.validator) + '</b>');
     if (m.generated) parts.push('GENERATED: <b>' + esc(m.generated) + '</b>');

@@ -408,6 +408,8 @@ h1 em,h2 em{font-style:normal;color:var(--orange)}
 .crawl-led[data-crawl="ok"]::before{background:var(--ok);box-shadow:0 0 6px var(--ok)}
 .crawl-led[data-crawl="blocked"]::before{background:var(--orange);box-shadow:0 0 6px var(--orange)}
 .crawl-led[data-crawl="error"]::before{background:var(--red);box-shadow:0 0 6px var(--red)}
+.verify-manual{font-family:var(--mono);font-size:.56rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--sev-medium);padding:.2rem .5rem}
+.ev-method{font-family:var(--mono);font-size:.5rem;font-weight:600;letter-spacing:.1em;color:var(--ink);background:var(--olive-500);padding:.15rem .4rem;flex:none;text-transform:uppercase}
 .dossier-btn{width:100%;display:flex;align-items:center;gap:.6rem;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;padding:.55rem 1.3rem .8rem;border-top:1px dashed rgba(143,160,94,.22)}
 .dossier-btn .dossier-more{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;color:var(--olive-300);text-transform:uppercase}
 .dossier-btn .fx-caret{margin-left:.1rem}
