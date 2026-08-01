@@ -6,9 +6,11 @@
     "crawl_engine": "crawl4ai",
     "crawl_version": "0.9.2",
     "crawled_at": null,
-    "domain_count": 0,
+    "domain_count": 20,
     "validation_status": "pending",
-    "validator": "Nash"
+    "validator": "Nash",
+    "wa_count": 0,
+    "az_count": 0
   },
   "competitors": [],
   "gaps": [],

@@ -149,7 +149,9 @@ rendered by Rockwell (plate). Added 2026-08-01 per owner standing order
     "crawl_engine": "crawl4ai",
     "crawl_version": "0.9.2",
     "crawled_at": "ISO-8601",
-    "domain_count": 10,
+    "domain_count": 20,
+    "wa_count": 10,
+    "az_count": 10,
     "validation_status": "pending | validated | failed",
     "validator": "Nash"
   },
@@ -160,7 +162,7 @@ rendered by Rockwell (plate). Added 2026-08-01 per owner standing order
     "market": "spokane-wa | phoenix-az | national",
     "threat_level": "critical | high | medium | low",
     "evidence": {
-      "services":      [{"text": "string", "source_url": "string"}],
+      "services":      [{"text": "string", "source_url": "string", "evidence_method": "crawl | manual"}],
       "pricing":       [{"text": "string", "source_url": "string"}],
       "guarantees":    [{"text": "string", "source_url": "string"}],
       "booking_paths": [{"text": "string", "source_url": "string"}],
@@ -199,7 +201,13 @@ rendered by Rockwell (plate). Added 2026-08-01 per owner standing order
 - threat_level: reuses the frozen severity ramp (critical | high | medium |
   low) so the plate renders on the existing severity ramp.
 - evidence: every item carries source_url from the crawl4ai output. No
-  source_url, no claim.
+  source_url, no claim. evidence_method is optional and defaults to "crawl";
+  manual fallback (blocked domains, GBP/landing page research) must be marked
+  "manual".
+- wa_count and az_count: per-track counts. Enforced by validation gate rule 3
+  (10 minimum per track). A single-market list cannot pass.
+- blocked/error dossiers: crawl_error is required and the dossier is marked
+  unresolved, never inferred.
 - digital_presence.crawl_status: ok | blocked | error. blocked/error means the
   competitor site rejected the crawl; the competitor stays listed as
   unresolved and is never inferred.
