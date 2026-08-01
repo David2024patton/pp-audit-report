@@ -6,7 +6,7 @@
   'use strict';
 
   var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var DATA = { scores: null, gates: null, findings: null };
+  var DATA = { scores: null, gates: null, findings: null, competitors: null };
 
   /* ---------- helpers ---------- */
   function esc(s) {
@@ -397,6 +397,175 @@
     }
   }
 
+  /* ---------- 05 competitor intel ---------- */
+  var THREAT_LABEL = { critical: 'CRITICAL', high: 'HIGH', medium: 'MEDIUM', low: 'LOW' };
+  var MARKET_LABEL = { 'spokane-wa': 'SPOKANE WA', 'phoenix-az': 'PHOENIX AZ', national: 'NATIONAL' };
+  var EVIDENCE_GROUPS = [
+    ['services', 'SERVICES'],
+    ['pricing', 'PRICING'],
+    ['guarantees', 'GUARANTEES'],
+    ['booking_paths', 'BOOKING PATHS'],
+    ['trust_signals', 'TRUST SIGNALS']
+  ];
+
+  function hostOf(url) {
+    return String(url || '').replace(/^https?:\/\//, '').split('/')[0];
+  }
+
+  function srcLink(url) {
+    if (!url) return '';
+    return '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">SRC:' + esc(hostOf(url)) + '</a>';
+  }
+
+  function evidenceList(items) {
+    if (!items || !items.length) return '<p class="empty-state" style="padding:.4rem 0">// NOT OBSERVED IN CRAWL</p>';
+    return '<ul>' + items.map(function (it) {
+      return '<li><span class="ev-text">' + esc(it.text) + '</span>' + (it.evidence_method === 'manual' ? '<span class="ev-method">MANUAL</span>' : '') + srcLink(it.source_url) + '</li>';
+    }).join('') + '</ul>';
+  }
+
+  function presenceHTML(dp) {
+    if (!dp) return '';
+    var rows = [];
+    if (dp.seo_title) rows.push(['TITLE', dp.seo_title]);
+    if (dp.h1) rows.push(['H1', dp.h1]);
+    if (dp.meta_description) rows.push(['META', dp.meta_description]);
+    if (dp.crawl_error) rows.push(['CRAWL NOTE', dp.crawl_error]);
+    if (!rows.length) return '';
+    return '<div class="dossier-pres"><h4>// ON-PAGE SIGNALS</h4>' + rows.map(function (r) {
+      return '<div class="pres-row"><span class="pres-k">' + r[0] + '</span><span class="pres-v">' + esc(r[1]) + '</span></div>';
+    }).join('') + '</div>';
+  }
+
+  function dossierHTML(c, i) {
+    var id = c.id || ('COMP-' + String(i + 1).padStart(2, '0'));
+    var sev = THREAT_LABEL[c.threat_level] ? c.threat_level : 'low';
+    var market = MARKET_LABEL[c.market] || esc(c.market || '');
+    var crawl = (c.digital_presence && c.digital_presence.crawl_status) || 'ok';
+    var ev = EVIDENCE_GROUPS.map(function (g) {
+      var items = (c.evidence && c.evidence[g[0]]) || [];
+      return '<div><h4>// ' + g[1] + '</h4>' + evidenceList(items) + '</div>';
+    }).join('');
+    return '<article class="dossier" role="listitem">' +
+      '<div class="dossier-top">' +
+        '<div><p class="dossier-rank">' + esc(id) + '</p>' +
+        '<h3 class="dossier-name">' + esc(c.name) + '</h3>' +
+        '<p class="dossier-sub">' + market + ' <span class="eyebrow-sep">//</span> ' + esc(c.domain || '') + '</p></div>' +
+        '<div class="dossier-badges"><span class="threat-badge" data-sev="' + sev + '">THREAT: ' + THREAT_LABEL[sev] + '</span>' +
+        '<span class="crawl-led" data-crawl="' + crawl + '">CRAWL: ' + crawl + '</span>' + (crawl !== 'ok' ? '<span class="verify-manual">VERIFY MANUALLY</span>' : '') + '</div>' +
+      '</div>' +
+      '<button type="button" class="dossier-btn" aria-expanded="false" aria-controls="dos-' + esc(id) + '">' +
+        '<span class="fx-caret" aria-hidden="true">▸</span><span class="dossier-more">EVIDENCE DOSSIER</span></button>' +
+      '<div class="dossier-detail" id="dos-' + esc(id) + '">' +
+        '<div class="dossier-detail-inner"><div class="evidence">' + (ev || '<p class="empty-state">// NO CRAWL EVIDENCE ON FILE</p>') + '</div>' +
+        presenceHTML(c.digital_presence) + '</div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function srcCell(url) {
+    if (!url) return '<span class="it-src">NO SOURCE</span>';
+    return '<a class="it-src" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">SRC:' + esc(hostOf(url)) + '</a>';
+  }
+
+  function intelTable(kind, title, rows) {
+    var body = rows.map(function (r) {
+      var id = '<span class="it-id">' + esc(r.id) + '</span>';
+      var cat = '<span class="it-cat">' + esc(r.category || '') + '</span>';
+      var metaSmall = '';
+      if (kind === 'gaps') {
+        var seen = (r.competitor_ids || []).map(esc).join(', ');
+        if (seen) metaSmall += '<small>SEEN AT: ' + seen + '</small>';
+        if (r.patriot_impact) metaSmall += '<small>PATRIOT IMPACT: ' + esc(r.patriot_impact) + '</small>';
+      } else if (r.patriot_evidence) {
+        metaSmall = '<small>PATRIOT EVIDENCE: ' + esc(r.patriot_evidence) + '</small>';
+      }
+      return '<div class="it-row">' + id + cat +
+        '<span class="it-desc">' + esc(r.description) + metaSmall + '</span>' +
+        srcCell(r.source_url) + '</div>';
+    }).join('');
+    return '<div class="intel-table" data-kind="' + kind + '"><p class="intel-table-title">' + title + '</p>' + body + '</div>';
+  }
+
+  function intelStatus(payload) {
+    var host = $('#intel-status');
+    if (!host) return;
+    var state = 'dark', tag = 'SIGNAL DARK', msg = '';
+    if (!payload) {
+      msg = 'competitors.json not on the wire. Crawl output has not landed. Nothing on this plate is inferred.';
+    } else {
+      var m = payload.meta || {};
+      if (m.validation_status === 'validated') {
+        state = 'validated';
+        tag = 'VALIDATED';
+        msg = 'Nash evidence gate passed. Every claim on this plate traces to crawl4ai output.';
+      } else if (m.validation_status === 'failed') {
+        tag = 'VALIDATION FAILED';
+        msg = 'Nash returned the file to Hamilton. The plate stays dark until a validated re-crawl lands.';
+      } else {
+        tag = 'VALIDATION PENDING';
+        msg = 'Crawl output filed, Nash gate not passed. The plate stays dark until validated.';
+      }
+    }
+    host.setAttribute('data-state', state);
+    host.innerHTML = '<span class="intel-status-led" aria-hidden="true"></span><span class="intel-status-tag">' + tag + '</span><span class="intel-status-msg">' + msg + '</span>';
+  }
+
+  function intelMeta(payload) {
+    var host = $('#intel-meta');
+    if (!host) return;
+    var m = payload && payload.meta;
+    if (!m) { host.innerHTML = ''; return; }
+    var parts = [];
+    if (m.crawl_engine) parts.push('ENGINE: <b>' + esc(m.crawl_engine) + '</b>' + (m.crawl_version ? ' v' + esc(m.crawl_version) : ''));
+    if (m.domain_count != null) parts.push('DOMAINS: <b>' + m.domain_count + '</b>');
+    if (m.wa_count != null && m.az_count != null) parts.push('TRACKS: <b>WA ' + m.wa_count + ' / AZ ' + m.az_count + '</b>');
+    if (m.crawled_at) parts.push('CRAWLED: <b>' + esc(m.crawled_at) + '</b>');
+    if (m.validator) parts.push('VALIDATOR: <b>' + esc(m.validator) + '</b>');
+    if (m.generated) parts.push('GENERATED: <b>' + esc(m.generated) + '</b>');
+    host.innerHTML = parts.join(' <span class="eyebrow-sep">//</span> ');
+  }
+
+  function refreshColophon() {
+    var meta = $('#colophon-meta');
+    if (!meta) return;
+    var stamps = [];
+    if (DATA.findings && DATA.findings.meta && DATA.findings.meta.generated) stamps.push('findings @ ' + DATA.findings.meta.generated);
+    if (DATA.findings && DATA.findings.meta && DATA.findings.meta.total != null) stamps.push(DATA.findings.meta.total + ' findings');
+    else if (DATA.findings && DATA.findings.findings) stamps.push(DATA.findings.findings.length + ' findings');
+    if (DATA.competitors && DATA.competitors.meta) stamps.push('competitors @ ' + DATA.competitors.meta.validation_status);
+    else stamps.push('competitors: dark');
+    meta.textContent = 'scores.json · gates.json · findings.json · competitors.json' + (stamps.length ? ' // ' + stamps.join(' · ') : '');
+  }
+
+  function renderCompetitors(payload) {
+    var host = $('#intel-field');
+    if (!host) return;
+    var validated = payload && payload.meta && payload.meta.validation_status === 'validated';
+    if (!validated) {
+      host.innerHTML = '<div class="intel-dark"><p class="intel-dark-title">THE PLATE IS <em>DARK.</em></p>' +
+        '<p class="intel-dark-note">' + (payload ? 'VALIDATION NOT PASSED // NO CRAWL-BACKED INTEL ON THE BOARD' : 'AWAITING CRAWL OUTPUT // COMPETITORS.JSON NOT ON THE WIRE') + '</p></div>';
+      return;
+    }
+    var comps = payload.competitors || [];
+    var gaps = payload.gaps || [];
+    var wins = payload.wins || [];
+    var html = '<div class="intel-grid" role="list" aria-label="Competitor dossiers">' + comps.map(dossierHTML).join('') + '</div>';
+    var tables = '';
+    if (gaps.length) tables += intelTable('gaps', 'GAP TABLE // WHAT THE FIELD HAS THAT PATRIOT LACKS', gaps);
+    if (wins.length) tables += intelTable('wins', 'DOING IT BETTER // WHERE PATRIOT WINS', wins);
+    if (tables) html += '<div class="intel-tables">' + tables + '</div>';
+    host.innerHTML = html;
+    $all('.dossier-btn', host).forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        var panel = document.getElementById(btn.getAttribute('aria-controls'));
+        btn.setAttribute('aria-expanded', String(!open));
+        panel.classList.toggle('open', !open);
+      });
+    });
+  }
+
   /* ---------- boot ---------- */
   function boot() {
     startClock();
@@ -435,19 +604,28 @@
       }
 
       /* data-layer freshness stamp */
-      var meta = $('#colophon-meta');
-      if (meta) {
-        var stamps = [];
-        if (DATA.findings && DATA.findings.meta && DATA.findings.meta.generated) stamps.push('findings @ ' + DATA.findings.meta.generated);
-        if (DATA.findings && DATA.findings.meta && DATA.findings.meta.total != null) stamps.push(DATA.findings.meta.total + ' findings');
-        else stamps.push(DATA.findings.findings.length + ' findings');
-        meta.textContent = 'scores.json · gates.json · findings.json' + (stamps.length ? ' — ' + stamps.join(' · ') : '');
-      }
+      refreshColophon();
     }).catch(function (err) {
       var host = $('#finding-list');
       if (host) host.innerHTML = '<p class="empty-state">// DATA LAYER UNREACHABLE: ' + esc(err.message) + '</p>';
       if (window.console) console.error('AUDIT.SYS boot failure:', err);
     });
+
+    /* competitor intel plate: independent fetch, dark state on absence */
+    fetchJSON(base + 'competitors.json').then(function (comp) {
+      DATA.competitors = comp;
+      renderCompetitors(comp);
+      intelStatus(comp);
+      intelMeta(comp);
+      refreshColophon();
+      startReveals();
+    }).catch(function () {
+      renderCompetitors(null);
+      intelStatus(null);
+      intelMeta(null);
+      refreshColophon();
+    });
+
   }
 
   if (document.readyState === 'loading') {

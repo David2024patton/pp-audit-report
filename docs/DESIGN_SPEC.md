@@ -97,3 +97,36 @@ Serve /src as the web root. /data must be reachable at ../data relative to the
 HTML (i.e. sibling of src). Two options: serve the repo root with /src as
 document root and an alias, or copy src+data into the container and set the
 fetch base. The fetch base is a single constant in js/app.js (var base).
+
+## Structure (fifth plate, added 2026-08-01)
+
+5. **Competitor intel plate**: renders from data/competitors.json (Nash's
+   frozen contract, PR #2). Crawl-backed only. Two states:
+   - SIGNAL DARK: file missing, validation_status pending or failed. Dashed
+     red intel-dark panel. Nothing is inferred.
+   - VALIDATED: dossier grid (2-up, 1-up below 820px) + gap table + wins
+     table.
+   Dossier cards: COMP-NN eyebrow, market chip (spokane-wa | phoenix-az |
+   national), Black Ops One name, threat badge on the frozen severity ramp
+   with a text label, crawl LED (ok | blocked | error), expandable evidence
+   groups (services, pricing, guarantees, booking paths, trust signals)
+   where every claim pins a source_url link, and an on-page signals block
+   (seo_title, h1, meta_description, crawl_error). Gap rows amber-tinted
+   (sev-medium), win rows olive-300 tinted, both traceable to a crawl
+   source. Plate id: #intel, nav label: INTEL.
+
+## Plate 05 additions (2026-08-01, second pass)
+
+- Empty evidence groups render as "NOT OBSERVED IN CRAWL": absence is
+  reported as absence per Nash's gate rule 5, never skipped silently.
+- Blocked/error dossiers carry a VERIFY MANUALLY marker (amber) next to the
+  crawl LED, so a failed crawl never reads as "competitor has nothing."
+- Evidence items filed via manual fallback carry evidence_method=manual and
+  render with a MANUAL tag (olive) beside the source link.
+- Meta readout now shows per-track counters when present: TRACKS: WA n / AZ n.
+- Verified at full scale: 40-competitor contract-faithful fixture (20 WA,
+  19 AZ, 1 national; ok/blocked/error mix; manual fallback; empty groups)
+  renders 40 dossiers, all four threat severities, both tables. 32/32 DOM
+  smoke assertions pass. Synthetic fixture is test-only, never shipped.
+
+
