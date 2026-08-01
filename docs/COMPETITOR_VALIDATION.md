@@ -35,11 +35,15 @@ adopted in full by Washington, is load-bearing in the gate.
    A file with fewer than 10 competitors in either track fails even if the
    total is 10 or more. Phoenix track absence is a hard fail.
 4. Crawl success rate: crawl_status must be ok for at least 80 percent of
-   competitors. Every blocked/error competitor must carry crawl_error (e.g.
-   "HTTP 403 bot-blocked", "NXDOMAIN", "connection refused") and is listed
-   as unresolved with a "verify manually" marker. A blocked/error dossier
-   must never read as "competitor has nothing": its evidence arrays stay
-   empty unless manual fallback is performed and marked.
+   competitors overall AND at least 80 percent within EACH track
+   (wa_ok/wa_count >= 0.80, az_ok/az_count >= 0.80). The per-track floor
+   is additive to rule 3: a lopsided crawl where one market clears and the
+   other collapses still fails the gate. Every blocked/error competitor
+   must carry crawl_error (e.g. "HTTP 403 bot-blocked", "NXDOMAIN",
+   "connection refused") and is listed as unresolved with a "verify
+   manually" marker. A blocked/error dossier must never read as
+   "competitor has nothing": its evidence arrays stay empty unless manual
+   fallback is performed and marked.
 5. No fabricated intel: a service, price, guarantee, or trust signal that is
    not in the crawl output (or a marked manual fallback) is not in
    competitors.json. Absence is reported as absence.
@@ -62,7 +66,7 @@ adopted in full by Washington, is load-bearing in the gate.
 - [ ] Source URLs match the competitor domain they are filed under
 - [ ] Manual-fallback items marked evidence_method="manual" with live source
 - [ ] wa_count >= 10 and az_count >= 10 (domain_count >= 20)
-- [ ] crawl_status ok ratio >= 80 percent
+- [ ] crawl_status ok ratio >= 80 percent overall AND per track
 - [ ] blocked/error competitors carry crawl_error + verify-manually marker
 - [ ] No claim without crawl backing (or marked manual fallback)
 - [ ] Threat levels reproducible from evidence

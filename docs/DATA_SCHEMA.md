@@ -206,6 +206,8 @@ rendered by Rockwell (plate). Added 2026-08-01 per owner standing order
   "manual".
 - wa_count and az_count: per-track counts. Enforced by validation gate rule 3
   (10 minimum per track). A single-market list cannot pass.
+- Per-track crawl-ok floor: gate rule 4 requires >= 80 percent crawl-ok
+  overall AND within each track (wa_ok/wa_count, az_ok/az_count).
 - blocked/error dossiers: crawl_error is required and the dossier is marked
   unresolved, never inferred.
 - digital_presence.crawl_status: ok | blocked | error. blocked/error means the
