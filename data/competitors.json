@@ -1,18 +1,2736 @@
 {
   "meta": {
-    "generated": "2026-08-01T00:00:00Z",
+    "generated": "2026-08-01T04:11:23Z",
     "project": "patriot-pest-control",
     "audit_date": "2026-08-01",
     "crawl_engine": "crawl4ai",
     "crawl_version": "0.9.2",
-    "crawled_at": null,
-    "domain_count": 20,
+    "crawled_at": "2026-08-01T03:55:01Z",
+    "domain_count": 40,
+    "wa_count": 20,
+    "az_count": 20,
     "validation_status": "pending",
-    "validator": "Nash",
-    "wa_count": 0,
-    "az_count": 0
+    "validator": "Nash"
   },
-  "competitors": [],
-  "gaps": [],
-  "wins": []
+  "competitors": [
+    {
+      "id": "COMP-01",
+      "name": "Terminix (Spokane)",
+      "domain": "terminix.com",
+      "market": "spokane-wa",
+      "threat_level": "critical",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " Pest Control Services",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Termite Treatment",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Ant Control](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bat Control](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "com/rodent-control/)[Mosquito & Tick Control >](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "SAVE $150 ON RODENT AND WILDLIFE CONTROL",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Save $50 on Pest Control",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Use code SAVE50 at checkout to save $50 when starting a new pest control plan.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Use code **SAVE75** at checkout.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Use code BITE50** at checkout.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "The **Terminix It Guarantee** means that if pests come back, so do we – to re-treat at no additional cost.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Schedule a free inspection today](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": []
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control & Termite Treatment: Local Exterminators",
+        "meta_description": "For more than 90 years, Terminix has protected what matters most. With 300+ locations nationwide, we can service your home pest control needs. Get started today.",
+        "h1": "Terminix® Pest Control",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-02",
+      "name": "Orkin (Spokane)",
+      "domain": "orkin.com",
+      "market": "spokane-wa",
+      "threat_level": "critical",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " ## Pest Control",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " ## Termite Control",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " ## Pest Library",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Save $75 on Pest Control and Prevention",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Save $75 on your first recurring pest control service today with code APPLY75.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " The Orkin Guarantee",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "With off-schedule return visits and a **30-day money back guarantee** , keeping your home safe and giving you peace of mind is what we do best.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Get a Free Quote](https://www.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Create an account to schedule online, pay your bill, and more.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Over a century of experience solving pest problems.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Orkin Termite Treatment, Pest Control & Exterminator Service | Orkin",
+        "meta_description": "With more than 125 years of pest control experience, we're an industry leader in specialized protection against common pests including bed bugs, termites, rodents, & more.",
+        "h1": "The",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-03",
+      "name": "Guardian Pest Control",
+      "domain": "guardianpest.com",
+      "market": "spokane-wa",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Ant Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Spider Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Wasp Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Rodent Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bug Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Mosquito Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Termite Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Cockroach Control](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "We offer no-obligation quotes with zero pressure.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "You’ll get honest, upfront pricing— never the cheapest, but always the best value for quality service.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " Expert Pest Control in Utah for Ants, Rodents, Spiders & more – Guaranteed Results",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Schedule Free Inspection ](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Get My Free Quote ](https://guardianpest.",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Serving Utah for over 20 Yrs",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Trusted Pest Control Experts in Utah Since 2004",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " 801-225-6000 ](tel:8012256000",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Guardian Pest Control offers Eco-Friendly, Family-Friendly Protection Backed by Free Return Visits if Pests Come Back",
+            "source_url": "https://guardianpest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control In Utah | Guaranteed By Guardian Pest Control",
+        "meta_description": "Trusted pest control in Utah for ants, spiders, rodents & more. Eco-friendly solutions designed for families—backed by our service guarantee. Call 801-225-6000.",
+        "h1": "Expert Pest Control in Utah for Ants, Rodents, Spiders & more – Guaranteed Results",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-04",
+      "name": "Sprague Pest Solutions",
+      "domain": "spraguepest.com",
+      "market": "spokane-wa",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Agriculture](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Commercial Property](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Distribution & Storage](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Education](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Food Processing & Manufacturing](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Food Retail & Grocery](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Health Care](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Hotels & Resorts](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Housing](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Restaurants](https://www.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [
+          {
+            "text": " Schedule a consultation",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Since 1926, Sprague has grown through four generations of Treleven family leadership and a commitment to excellence.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "com/wp-content/uploads/Trelevens_4.",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " A Century Of Service",
+            "source_url": "https://spraguepest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "100 Years - Sprague Pest Solutions",
+        "meta_description": "100 Years Sprague Pest Solutions 800.272.4988",
+        "h1": "A Century Of Service",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-05",
+      "name": "PPC Inc",
+      "domain": "ppcinc.com",
+      "market": "spokane-wa",
+      "threat_level": "low",
+      "status": "error",
+      "crawl_error": "redirects to MAZMO Ad Server login (adserver.mazmo.net); not a pest control site",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "Domain redirects to MAZMO Ad Server login (adserver.mazmo.net); not a pest control site.",
+            "source_url": "https://adserver.mazmo.net/www/admin/index.php",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "MAZMO Ad Server",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "error",
+        "crawl_error": "redirects to MAZMO Ad Server login (adserver.mazmo.net); not a pest control site",
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-06",
+      "name": "Inland Pest Control",
+      "domain": "inlandpestcontrol.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Residential](https://www.",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Commerical](https://www.",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Rodents](https://www.",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Free Inspection](https://www.",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [],
+        "booking_paths": [
+          {
+            "text": "Get A Quote](https://www.",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " SCHEDULE AN INSPECTION",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Marlina Masterjohn, Spokane Valley",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "For many years, Inland Pest Control has offered outstanding pest control solutions for residential and commercial properties in Idaho and the surrounding areas.",
+            "source_url": "https://inlandpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Home | Inland Pest Control",
+        "meta_description": "",
+        "h1": "InlandPest Control",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-07",
+      "name": "Spokane Pest Control",
+      "domain": "spokanepestcontrol.com",
+      "market": "spokane-wa",
+      "threat_level": "low",
+      "status": "error",
+      "crawl_error": "HugeDomains for-sale page (listed $4,895); not an operating pest control site",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "HugeDomains for-sale page (listed $4,895); not an operating pest control site.",
+            "source_url": "https://www.hugedomains.com/domain_profile.cfm?d=spokanepestcontrol.com",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "SpokanePestControl.com is for sale | HugeDomains",
+        "meta_description": "Choose a memorable domain name. Professional, friendly customer support. Start using your domain right away.",
+        "h1": "SpokanePestControl.com",
+        "crawl_status": "error",
+        "crawl_error": "HugeDomains for-sale page (listed $4,895); not an operating pest control site",
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-08",
+      "name": "Spokane Pest Pros",
+      "domain": "spokanepestpros.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Ant Control](https://spokanepestpros.",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bug Extermination](https://spokanepestpros.",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "com/bee-and-wasp-removal \"Bee and Wasp Removal\"",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Cockroach Control](https://spokanepestpros.",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Get a free quote now",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " ✅ Guaranteed Satisfaction",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " **Customer Satisfaction Guaranteed:** We stand behind our services and are committed to ensuring your complete satisfaction.",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Get a free quote now",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "86 stars - 125 reviews",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "4.",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " **Experienced Professionals:** Our team consists of highly trained and certified pest control technicians with years of experience in the field.",
+            "source_url": "https://spokanepestpros.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control in Spokane, WA | Spokane Pest Pros",
+        "meta_description": "Award-Winning Pest Control in Spokane, WA! ⭐⭐⭐⭐⭐4.86 / 5 stars (125 reviews). Call immediately at (509) 207-2155 for your complimentary quote.",
+        "h1": "Pest Control in Spokane",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-09",
+      "name": "Spokane Exterminator",
+      "domain": "spokaneexterminator.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Ants](https://spudpest.",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bugs](https://spudpest.",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Comprehensive Pest Control Plans** : Whether you’re looking for a one-time treatment or ongoing pest control services, we offer customizable pest control plans tailored to your specific needs.",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [
+          {
+            "text": " All services backed by our \"Spud Buds Guarantee.",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Get A Free Quote ](https://spudpest.",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": " Tons of 5 Star Reviews",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Top Rated Spokane Exterminator",
+            "source_url": "https://spokaneexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Spokane Exterminator - Local Spokane Pest Control",
+        "meta_description": "Exterminator In Spokane, WA. We specialize in exterminating ants, spiders, wasps, bed bugs, and more. Call to speak with a real local! Spokane Pest Control",
+        "h1": "Top Rated Spokane Exterminator",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-10",
+      "name": "Spokane Valley Pest Control",
+      "domain": "spokanevalleypestcontrol.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " Ant Infestations",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Bed Bug Infestations",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Our spider removal service targets spiders and their food sources, creating a pest-free environment for you and your family.",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [
+          {
+            "text": " **Service Guarantees:** We stand behind our work with a satisfaction guarantee.",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " **Customer Satisfaction:** Consistently high ratings and reviews from satisfied customers.",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Get a free quote now",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Contact us today to schedule a free inspection and take the first step toward a pest-free home and get started with [spider removal](https://spokanevalleypestcontrol.",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "93 stars - 81 reviews",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "4.",
+            "source_url": "https://spokanevalleypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control in Spokane Valley, WA | Spokane Valley Pest Control Company",
+        "meta_description": "🥇 Elite Rated Pest Control in Spokane Valley, WA! ⭐⭐⭐⭐⭐4.93 / 5 stars (81 reviews). Call us now at (509) 214-2388 for an instant free quote.",
+        "h1": "Pest Control in Spokane Valley, WA",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-11",
+      "name": "Senske Lawn and Pest",
+      "domain": "senske.com",
+      "market": "spokane-wa",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Lawn Care Program](https://senske.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Tree Care Program](https://senske.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Pest Control Program](https://senske.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Get a Free Quote](https://senske.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [],
+        "booking_paths": [
+          {
+            "text": "Get a Free Quote](https://senske.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Senske was founded on strong, ethical values back in 1947 and operates with those same values today.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "21062 Reviews",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " 1051 5-star reviews and counting.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "senske-guarantee-family-owned](https://senske.",
+            "source_url": "https://senske.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Senske Lawn Care Services | Tree Care | Pest Control Services",
+        "meta_description": "Operating since 1947, Senske Services provides professional lawn care services, tree care, pest control, and grounds maintenance services in the Intermountain West region.",
+        "h1": "Your Lawn is Our Business",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-12",
+      "name": "Pointe Pest Control",
+      "domain": "pointepest.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Bed Bug Control](https://pointepest.",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Commercial Pest Control](https://pointepest.",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Pest Control Service in a Busy Commercial Area with Shops and Restaurants](data:image/svg+xml,%3Csvg%20xmlns='http://www.",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [
+          {
+            "text": "Our Guarantee and commitment will ensure your satisfaction.",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "9 Over 5878 Reviews",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Our company has set the standard for excellence in the pest management sector since 2006.",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Pest Control Experts",
+            "source_url": "https://pointepest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Local Pest Control Services | Pest Free Homes & Businesses",
+        "meta_description": "Pointe Pest Control provides effective pest control solutions for your home and business. Contact us today for a free quote and reclaim your space!",
+        "h1": "Pest Control Experts",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-13",
+      "name": "Liberty Lake Pest Control",
+      "domain": "libertylakepestcontrol.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " Bed Bug Treatment",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Bee And Wasp Control",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Ants](https://spudpest.",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [
+          {
+            "text": " All services backed by our \"Spud Buds Guarantee.",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Get A Free Quote ](https://spudpest.",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": " Tons of 5 Star Reviews",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Top Rated Liberty Lake Pest Control",
+            "source_url": "https://libertylakepestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Liberty Lake Pest Control - Pest Control Services",
+        "meta_description": "Pest Control In Liberty Lake, WA. We specialize in exterminating ants, spiders, wasps, bed bugs, and more. Call to speak with a real local! Liberty Lake Pest Control",
+        "h1": "Top Rated Liberty Lake Pest Control",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-14",
+      "name": "Cheney Pest Control",
+      "domain": "cheneypestcontrol.com",
+      "market": "spokane-wa",
+      "threat_level": "low",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": "Protect Your Business Today With over 30 years of experience, Cheney Pest Control is your trusted partner in maintaining a clean, safe, and pest-free environment for your business.",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Get A Free Quote ](https://cheneypestcontrol.",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "That’s why we offer a 100% retreat guarantee.",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Pest-Free Guarantee",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Get A Free Quote ](https://cheneypestcontrol.",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Protect Your Business Today With over 30 years of experience, Cheney Pest Control is your trusted partner in maintaining a clean, safe, and pest-free environment for your business.",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Based on **66 reviews",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Your Trusted Partner in Pest Control",
+            "source_url": "https://cheneypestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Cheney Pest Control – Cheney Pest Control",
+        "meta_description": "",
+        "h1": "Your Trusted Partner in Pest Control",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-15",
+      "name": "Truly Nolen (Spokane)",
+      "domain": "trulynolen.com",
+      "market": "spokane-wa",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": "• Pest Control",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Termite Control",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Rodent Control",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Receive $25 off your next service when a friend signs up for 4 Seasons Pest Control Service.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Free Estimate](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "If you’re not completely satisfied, you’ll get a full refund on your most recent service with our 100% money back guarantee.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Get a Free Inspection](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Free Estimate](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Truly Nolen is a family-owned company with 85 years of experience providing the best pest control.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "4 Seasons Pest Control](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Truly Nolen Pest Control, Termite Control & Exterminator",
+        "meta_description": "Truly Nolen is an 85-year-old, family-owned pest control company providing residential and commercial pest control services in more than 100 locations nationwide. Call for a free inspection today.",
+        "h1": "The Best Pest Control for Your Pest Problems",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-16",
+      "name": "Western Exterminator",
+      "domain": "westernexterminator.com",
+      "market": "spokane-wa",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [PestFree365](https://www.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Trained year-round in the latest [integrated pest management](https://www.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "We’ll inspect your property, identify current pest issues and future risks, and provide a clear, free quote.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Schedule your free inspection today.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "We focus on prevention, removal, and exclusion - our services are all backed by our customer satisfaction guarantee.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " 800-937-8398 ](tel:800-937-8398) [ Book a free pest inspection ](https://www.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "800-937-8398](tel:800-937-8398 \"800-937-8398\") \u0001 [ ](https://www.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Since 1921, Western Exterminator has been protecting homes and businesses across the Western US with customized pest management solutions.",
+            "source_url": "https://westernexterminator.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Local Pest Control & Expert Exterminators | Western Exterminator",
+        "meta_description": "Get reliable local pest control from the experts. Western Exterminator has top-rated local exterminators across the West Coast. Get in touch today.",
+        "h1": "Expert pest control services for homes and businesses",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-17",
+      "name": "Anticimex",
+      "domain": "anticimex.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": "About Anticimex SMARTAround the worldSustainabilityContact",
+            "source_url": "https://anticimex.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Anticimex SMART - Intelligent pest control around the clock",
+            "source_url": "https://anticimex.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [
+          {
+            "text": "About Anticimex SMARTAround the worldSustainabilityContact",
+            "source_url": "https://anticimex.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": " The modern pest control company",
+            "source_url": "https://anticimex.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "The modern pest control company - Anticimex",
+        "meta_description": "",
+        "h1": "The modern pest control company",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-18",
+      "name": "Aptive Environmental (Spokane)",
+      "domain": "aptive.com",
+      "market": "spokane-wa",
+      "threat_level": "medium",
+      "status": "blocked",
+      "crawl_error": "connection refused from agency network (DNS ok, HTTP refused)",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "National franchise; connection refused from agency network (DNS ok). Manual verification via live site/GBP.",
+            "source_url": "https://www.aptive.com/",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "connection refused from agency network (DNS ok, HTTP refused)",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-19",
+      "name": "Bug Man Pest Control",
+      "domain": "bugmanpestcontrol.com",
+      "market": "spokane-wa",
+      "threat_level": "low",
+      "status": "blocked",
+      "crawl_error": "connection refused from agency network (DNS ok, HTTP refused)",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "DNS resolves but HTTP refused from agency network; manual fallback via GBP.",
+            "source_url": "https://bugmanpestcontrol.com/",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "connection refused from agency network (DNS ok, HTTP refused)",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-20",
+      "name": "CroPro Pest Solutions",
+      "domain": null,
+      "market": "spokane-wa",
+      "threat_level": "low",
+      "status": "blocked",
+      "crawl_error": "no live domain (cropropest.com NXDOMAIN, cropro.com parked); GBP-only evidence",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "No live domain (cropropest.com NXDOMAIN, cropro.com parked); GBP-only evidence per recon (85+ reviews).",
+            "source_url": "https://www.google.com/maps/search/?api=1&query=CroPro+Pest+Solutions+Spokane",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "no live domain (cropropest.com NXDOMAIN, cropro.com parked); GBP-only evidence",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-21",
+      "name": "Green Home Pest Control",
+      "domain": "greenhomepest.com",
+      "market": "phoenix-az",
+      "threat_level": "critical",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Termites](https://www.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Rodent Control](https://www.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bug Inspection](https://www.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Cockroach Exterminator](https://www.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Scorpion Exterminator](https://www.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Mosquito Control](https://www.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "At Green Home, pest control plans start at $49 per month and focus on consistent protection, a pest-free guarantee, and reliable service you can count on.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Request Your Free Estimate Today",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " Satisfaction Guaranteed",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "At Green Home, pest control plans start at $49 per month and focus on consistent protection, a pest-free guarantee, and reliable service you can count on.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Request Your Free Estimate Today",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " FREE QUOTE ](https://greenhomepest.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": " 4.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "svg) 1482 Reviews ](https://maps.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Since we opened in 2009 as a locally owned business, we've become familiar to the pest control challenges that Arizona homes face.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "As a locally owned and operated AZ business with over three decades of experience, 'Green Home' has become a household name in THE VALLEY.",
+            "source_url": "https://greenhomepest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control Phoenix, AZ | Termite & Rodent Control | Bed Bug Treatment | Pest Extermination Phoenix",
+        "meta_description": "Affordable Phoenix, AZ pest control services by a leading exterminator company. Get $100 off your first visit—schedule with Green Home Pest Control!",
+        "h1": "Pest Control Company Serving Phoenix and throughout Arizona",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-22",
+      "name": "Arizona Pest Control",
+      "domain": "azpestcontrol.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Scorpion Control](https://www.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Termite Control](https://www.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Rodent Control](https://www.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Commercial](https://www.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Residential](https://www.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Free Inspection!",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Call Stormin’ Norman Termite and Pest Control today for a free quote.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "One to five-year warranties is available with all our termite treatments.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Free Inspection!",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "com/StorminNormanPC",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Scorpion Control in Phoenix](https://www.",
+            "source_url": "https://azpestcontrol.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Arizona Pest Control - Termite Control - Scorpion Control AZ",
+        "meta_description": "Stormin' Norman Termite and Pest Control services provides Arizona pest control, termite control, scorpion control and much more!",
+        "h1": "",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-23",
+      "name": "Burns Pest Elimination",
+      "domain": "burnspestelimination.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Bed Bug Treatment](https://www.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Mosquito Control](https://www.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Residential & Commercial Pest Control Services in Phoenix & Las Vegas",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Termites](https://www.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Scorpions](https://www.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Roof Rats](https://www.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Request a Free Quote in Minutes!",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "We provide free estimates.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "We encourage you to ask about our satisfaction guarantee and [special offers](https://www.",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "gl/HX8seRnzyupF1jAP9) [877-735-9189](tel:8777359189",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Family-Owned & Operated for Over 40 Years",
+            "source_url": "https://burnspestelimination.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Arizona & Nevada Pest Control | Burns Pest Elimination",
+        "meta_description": "Our family-owned and -operated pest control company can efficiently eliminate unwanted guests of all kinds. We offer same-day service and free estimates!",
+        "h1": "Arizona & Nevada Pest Control",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-24",
+      "name": "Blue Sky Pest Control",
+      "domain": "blueskypest.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Ant Control](https://www.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bug Services](https://www.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [ Cockroaches ](https://www.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [ Commercial ](https://www.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "$50 OFF New Residential Customers.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Get Free Quote](https://www.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " Blue Sky 365",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Get the all clear guarantee with our Blue Sky 365 Progam.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Get Free Quote](https://www.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Blue Sky is your trusted partner for reliable pest control throughout the Phoenix metro and greater Tucson areas.",
+            "source_url": "https://blueskypest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control Phoenix | Exterminators | Blue Sky Pest Control",
+        "meta_description": "Top rated local pest control service in Phoenix, AZ. Highly Effective & Responsive Exterminator. Best of AZ awards, 5 Star Rated, BBB A+",
+        "h1": "Hello Blue Sky,",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-25",
+      "name": "Varsity Pest Control",
+      "domain": "varsitypest.com",
+      "market": "phoenix-az",
+      "threat_level": "medium",
+      "status": "blocked",
+      "crawl_error": "HTTP 403 Akamai anti-bot block on all paths (container log)",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "Site blocked to crawler by Akamai anti-bot (HTTP 403 on all paths); operator verified in prior recon (HTTP 200 with browser UA). Manual verification required.",
+            "source_url": "https://varsitypest.com/",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "HTTP 403 Akamai anti-bot block on all paths (container log)",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-26",
+      "name": "Urban Desert Pest Control",
+      "domain": "urbandesertpest.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Scorpion](https://urbandesertpest.",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Ant](https://urbandesertpest.",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bug](https://urbandesertpest.",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Cockroach](https://urbandesertpest.",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Monsoon Pests in Phoenix: What Comes Out After the Rain",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [
+          {
+            "text": "or Call (602) 399-9629](tel:+16023999629 \"call for a quote\"",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Phone: (602) 399-9629](tel:\\(602\\)%20399-9629",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": " Over 21 Years of Experience",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Family-Owned & Dedicated to Your Pest-Free Home",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Founded in 2015 by a dedicated husband-and-wife team, we’ve been dedicated to providing affordable, straightforward solutions.",
+            "source_url": "https://urbandesertpest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control Phoenix AZ – Exterminator Services | Urban Desert Pest Control",
+        "meta_description": "Fast, affordable pest control in Phoenix, AZ from Urban Desert Pest Control. Local exterminator experts for scorpions, termites, rodents & more. Call today for a free quote.",
+        "h1": "PEST CONTROL SERVICES in PHOENIX YOU",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-27",
+      "name": "Insectek Pest Solutions",
+      "domain": "insectek.com",
+      "market": "phoenix-az",
+      "threat_level": "low",
+      "status": "error",
+      "crawl_error": "GoDaddy parked page ('is parked free, courtesy of GoDaddy.com')",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "GoDaddy parked page ('is parked free, courtesy of GoDaddy.com'); no operating pest control content.",
+            "source_url": "https://insectek.com/lander",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "error",
+        "crawl_error": "GoDaddy parked page ('is parked free, courtesy of GoDaddy.com')",
+        "crawled_at": "2026-08-01T03:51:27Z"
+      }
+    },
+    {
+      "id": "COMP-28",
+      "name": "Northwest Exterminating",
+      "domain": "nwexterminating.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Bed Bug Control](https://www.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "com/QMB0Zbj0Xj-1736/images/pest-library/american-cockroaches-in-tucson-az.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "png) Commercial Pest Control Our commercial pest control services are designed to meet your company's special requirements and minimize the effect on business, customers, and employees.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Mosquito Control](https://www.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "t=ar_4x3%2Ccrop%2Cw_400) Conenose/Kissing Bugs ](https://www.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "monsoons in arizona in september](https://bcms-files.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Request Your Free Estimate",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "Say Goodbye to Pests with On-Time, Guaranteed Solutions: Trust Arizona's Premier Pest Control Company with over 30 Years of Experience!",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Any Pest.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Request Your Free Estimate",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Northwest Exterminating received an average rating of 4.",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Say Goodbye to Pests with On-Time, Guaranteed Solutions: Trust Arizona's Premier Pest Control Company with over 30 Years of Experience!",
+            "source_url": "https://nwexterminating.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Professional Pest Control For Tucson, Phoenix, Southern AZ",
+        "meta_description": "For pest control in Tucson, Phoenix, and Southern AZ, Northwest Exterminating is the best pest control company for the job!",
+        "h1": "Any Pest. On-Time. Guaranteed.",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-29",
+      "name": "Truly Nolen (AZ)",
+      "domain": "trulynolen.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": "• Pest Control",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Termite Control",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Rodent Control",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Receive $25 off your next service when a friend signs up for 4 Seasons Pest Control Service.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Free Estimate](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "If you’re not completely satisfied, you’ll get a full refund on your most recent service with our 100% money back guarantee.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Get a Free Inspection](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Free Estimate](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Truly Nolen is a family-owned company with 85 years of experience providing the best pest control.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "4 Seasons Pest Control](https://www.",
+            "source_url": "https://trulynolen.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Truly Nolen Pest Control, Termite Control & Exterminator",
+        "meta_description": "Truly Nolen is an 85-year-old, family-owned pest control company providing residential and commercial pest control services in more than 100 locations nationwide. Call for a free inspection today.",
+        "h1": "The Best Pest Control for Your Pest Problems",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-30",
+      "name": "Patriot Pest AZ",
+      "domain": "patriotpestaz.com",
+      "market": "phoenix-az",
+      "threat_level": "critical",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " Ants ](https://patriotpestprescott.",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Bed Bugs ](https://patriotpestprescott.",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Cockroaches ](https://patriotpestprescott.",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Commercial Pest Control ](https://patriotpestprescott.",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Residential Pest Control ](https://patriotpestprescott.",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [
+          {
+            "text": " Our Eco-Friendly Pest Control Promise",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "We utilize eco-friendly, child-safe and pet-safe methods to rid your home or commercial property of unwanted pests.",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "com/contact-us) [ (928) 415-2170 ](tel:+19284152170",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Serving as your hometown trusted exterminators since 1976",
+            "source_url": "https://patriotpestaz.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "#1 Pest Control Company in Prescott, AZ | Homes and Businesses",
+        "meta_description": "Leading pest control company in Prescott, AZ. Get pest removal services for termites, cockroaches, rodents, ants, & more when you call today!",
+        "h1": "Prescott’s #1 Choice for Pest Control Service",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-31",
+      "name": "Green Mango Pest Control",
+      "domain": "greenmangopest.com",
+      "market": "phoenix-az",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": "com/wp-content/uploads/2023/10/Termites.",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "org/2000/svg'%20width='0'%20height='0'%20viewBox='0%200%200%200'%3E%3C/svg%3E)WEEDS](https://greenmangopest.",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "FILL OUT THE FORM ABOVE OR CALL US AT 480-919-2174 TODAY TO SPEAK WITH AN EXPERT AND GET A REAL-TIME QUOTE AT OUR BEST RATE.",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "PEST-FREE GUARANTEE _Expand_",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "PROTECT YOUR HOME AND YOUR WALLET WITH PREMIUM TERMITE DETECTION AND PROTECTION, BACKED BY A 10-YEAR GUARANTEE.",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "FILL OUT THE FORM ABOVE OR CALL US AT 480-919-2174 TODAY TO SPEAK WITH AN EXPERT AND GET A REAL-TIME QUOTE AT OUR BEST RATE.",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Book now to experience our award-winning, 5-star service and the Valley's best \"pest-free\" guarantee.",
+            "source_url": "https://greenmangopest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Top-Rated Pest Control Provider in Phoenix | Green Mango",
+        "meta_description": "Defend your home with Green Mango's award-winning pest control services. From termite protection to weed elimination, choose the best in the Valley.",
+        "h1": "",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-32",
+      "name": "EcoShield Pest Solutions",
+      "domain": "ecoshieldpest.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " Bed Bug Removal & Elimination",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Mosquito Control & Elimination",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Pest Select your pest problem Ants Bed Bugs Carpenter Bees Cockroaches Mice / Rodents Mosquitoes Spiders Wasps / Yellow jackets Termites Ticks Other Pests Multiple Pests Insulation Stinging Insects",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Commercial Service](https://www.",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Free Estimates",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "SCHEDULE NOW and receive $100 OFF an Annual Plan",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " 100% Guaranteed",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Why is EcoShield's Guarantee Better than Other Pest Management Companies?",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "While other pest management companies may also offer a service guarantee, the difference is that EcoShield will follow up immediately if you have a recurring problem.",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Free Estimates",
+            "source_url": "https://ecoshieldpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": []
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control | Exterminators | EcoShield Pest Solutions",
+        "meta_description": "EcoShield Pest Solutions provides Extermination and Pest Control Services for homes and businesses. We specialize in the removal and control of ants, mice, bed bugs, carpenter bees, yellow jackets, and much more! Call us today for a free no-obligation estimate.",
+        "h1": "PEST-FREE HAPPY LIVING STARTS HERE",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-33",
+      "name": "Bulwark Exterminating",
+      "domain": "bulwarkpest.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [TERMITE CONTROL](https://bulwarkpestcontrol.",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [MOSQUITO CONTROL](https://bulwarkpestcontrol.",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Rodent Control](https://bulwarkpestcontrol.",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Scorpion Control](https://bulwarkpestcontrol.",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Request A Free Quote",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "Bug-Free or Your Money-Back Guarantee since 1999.",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": " Request A Free Quote",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "As a family-owned business, we’re committed to keeping your household bug-free and happy with innovative, personalized [pest control solutions](https://bulwarkpestcontrol.",
+            "source_url": "https://bulwarkpest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Residential Pest Control Services | Bulwark Exterminating",
+        "meta_description": "Protect your home with Bulwark Exterminating’s residential pest control services. Get family-friendly treatments for ants, roaches, rodents, termites and more.",
+        "h1": "Sick of Bugs?",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-34",
+      "name": "Terminix (Phoenix)",
+      "domain": "terminix.com",
+      "market": "phoenix-az",
+      "threat_level": "critical",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " Pest Control Services",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Termite Treatment",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Ant Control](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bat Control](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "com/rodent-control/)[Mosquito & Tick Control >](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "SAVE $150 ON RODENT AND WILDLIFE CONTROL",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Save $50 on Pest Control",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Use code SAVE50 at checkout to save $50 when starting a new pest control plan.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Use code **SAVE75** at checkout.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Use code BITE50** at checkout.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": "The **Terminix It Guarantee** means that if pests come back, so do we – to re-treat at no additional cost.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Schedule a free inspection today](https://www.",
+            "source_url": "https://terminix.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": []
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control & Termite Treatment: Local Exterminators",
+        "meta_description": "For more than 90 years, Terminix has protected what matters most. With 300+ locations nationwide, we can service your home pest control needs. Get started today.",
+        "h1": "Terminix® Pest Control",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-35",
+      "name": "Orkin (Phoenix)",
+      "domain": "orkin.com",
+      "market": "phoenix-az",
+      "threat_level": "critical",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " ## Pest Control",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " ## Termite Control",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " ## Pest Library",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": " Save $75 on Pest Control and Prevention",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "Save $75 on your first recurring pest control service today with code APPLY75.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [
+          {
+            "text": " The Orkin Guarantee",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "With off-schedule return visits and a **30-day money back guarantee** , keeping your home safe and giving you peace of mind is what we do best.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [
+          {
+            "text": "Get a Free Quote](https://www.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Create an account to schedule online, pay your bill, and more.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "Over a century of experience solving pest problems.",
+            "source_url": "https://orkin.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Orkin Termite Treatment, Pest Control & Exterminator Service | Orkin",
+        "meta_description": "With more than 125 years of pest control experience, we're an industry leader in specialized protection against common pests including bed bugs, termites, rodents, & more.",
+        "h1": "The",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:48:51Z"
+      }
+    },
+    {
+      "id": "COMP-36",
+      "name": "Mantis Pest Solutions",
+      "domain": "mantispest.com",
+      "market": "phoenix-az",
+      "threat_level": "medium",
+      "status": "blocked",
+      "crawl_error": "HTTP 403 Akamai anti-bot block (container log)",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "Tempe AZ operator; site blocked to crawler by Akamai anti-bot (HTTP 403). Manual verification required.",
+            "source_url": "https://mantispest.com/",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "HTTP 403 Akamai anti-bot block (container log)",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-37",
+      "name": "Fox Pest Control",
+      "domain": "foxpest.com",
+      "market": "phoenix-az",
+      "threat_level": "high",
+      "status": "blocked",
+      "crawl_error": "HTTP 403 Akamai anti-bot block (container log)",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "AZ-locations operator; site blocked to crawler by Akamai anti-bot (HTTP 403). Manual verification required.",
+            "source_url": "https://foxpest.com/",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "HTTP 403 Akamai anti-bot block (container log)",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-38",
+      "name": "Aptive Environmental (AZ)",
+      "domain": "aptive.com",
+      "market": "phoenix-az",
+      "threat_level": "medium",
+      "status": "blocked",
+      "crawl_error": "connection refused from agency network (DNS ok, HTTP refused)",
+      "evidence": {
+        "services": [],
+        "pricing": [],
+        "guarantees": [],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "National franchise; connection refused from agency network (DNS ok). Manual verification via live site/GBP.",
+            "source_url": "https://www.aptive.com/",
+            "evidence_method": "manual"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "",
+        "meta_description": "",
+        "h1": "",
+        "crawl_status": "blocked",
+        "crawl_error": "connection refused from agency network (DNS ok, HTTP refused)",
+        "crawled_at": null
+      }
+    },
+    {
+      "id": "COMP-39",
+      "name": "Premier Pest Control",
+      "domain": "premierpest.com",
+      "market": "phoenix-az",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Ant Control](https://www.",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "php \"Cockroach Control\"",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Rodent Control](https://www.",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Scorpion Control](https://www.",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [
+          {
+            "text": "Contact Us Today for a Free Estimate!",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "guarantees": [],
+        "booking_paths": [
+          {
+            "text": "Contact Us Today for a Free Estimate!",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "trust_signals": [
+          {
+            "text": "480) 816-9388",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Fountain Hills Pest Control](https://www.",
+            "source_url": "https://premierpest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "Pest Control Fountain Hills AZ | Premier Pest",
+        "meta_description": "",
+        "h1": "[](https://www.premierpest.com/index.php)",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:55:01Z"
+      }
+    },
+    {
+      "id": "COMP-40",
+      "name": "East Valley Pest Control",
+      "domain": "eastvalleypest.com",
+      "market": "phoenix-az",
+      "threat_level": "medium",
+      "status": "ok",
+      "crawl_error": null,
+      "evidence": {
+        "services": [
+          {
+            "text": " [Scorpion Control](https://bluesagepros.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Spider Control](https://bluesagepros.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Bed Bug Control](https://bluesagepros.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " [Cockroach Control](https://bluesagepros.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "pricing": [],
+        "guarantees": [
+          {
+            "text": " Quality Guaranteed",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": " Satisfaction Guaranteed",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          }
+        ],
+        "booking_paths": [],
+        "trust_signals": [
+          {
+            "text": "We are proud to serve the East Valley of Arizona including areas such as Gilbert, Mesa, Chandler, Tempe, San Tan Valley, Maricopa, Tempe.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "com/scorpion-removal-mesa-arizona/",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "When I first moved into my house in South Tempe, there were Scorpions and roaches ALL over my back yard.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          },
+          {
+            "text": "At Blue Sage Pest and Weeds, we use safe and effective top-of-the-line products for pest control.",
+            "source_url": "https://eastvalleypest.com/",
+            "evidence_method": "crawl"
+          }
+        ]
+      },
+      "digital_presence": {
+        "seo_title": "East Valley Pest Control | Mesa, Chandler, Tempe, Scottsdale - East Valley Pest Control",
+        "meta_description": "At Blue Sage Pest and Weeds, we are passionate about providing top-quality pest control services in Phoenix. Our team is dedicated to delivering the best",
+        "h1": "SAY GOODBYE TO PESTS AND WEEDS",
+        "crawl_status": "ok",
+        "crawl_error": null,
+        "crawled_at": "2026-08-01T03:55:01Z"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP-01",
+      "category": "service",
+      "description": "Scorpion control: AZ competitors own dedicated scorpion keyword pages (azpestcontrol.com 'Scorpion Control in Phoenix', greenhomepest.com scorpion-control). Patriot lacks a scorpion page.",
+      "competitor_ids": [
+        "COMP-22",
+        "COMP-21"
+      ],
+      "patriot_impact": "Patriot loses AZ scorpion keyword traffic and monsoon-season demand to dedicated competitor pages.",
+      "source_url": "https://www.azpestcontrol.com/scorpion-control-phoenix/"
+    },
+    {
+      "id": "GAP-02",
+      "category": "service",
+      "description": "Desert-pest content depth: competitors publish roof rat, conenose/kissing bug, and monsoon-pest pages (burnspestelimination.com roof rats; nwexterminating.com conenose/kissing bugs; urbandesertpest.com 'Monsoon Pests in Phoenix'). Patriot lacks equivalent AZ desert-pest content.",
+      "competitor_ids": [
+        "COMP-23",
+        "COMP-28",
+        "COMP-26"
+      ],
+      "patriot_impact": "Patriot misses long-tail AZ desert-pest searches that drive seasonal demand.",
+      "source_url": "https://urbandesertpest.com/phoenix-monsoon-pests/"
+    },
+    {
+      "id": "GAP-03",
+      "category": "trust",
+      "description": "Review-volume proof: leaders display thousands of reviews (NW Exterminating 4.8/3391, Green Home 4.9/1482, Senske 21062, Pointe 5878). Patriot home/pricing pages surface no review counts.",
+      "competitor_ids": [
+        "COMP-28",
+        "COMP-21",
+        "COMP-11",
+        "COMP-12"
+      ],
+      "patriot_impact": "Patriot loses social-proof battles against competitors with visible review mass.",
+      "source_url": "https://www.nwexterminating.com/"
+    },
+    {
+      "id": "GAP-04",
+      "category": "offer",
+      "description": "Termite warranty: azpestcontrol.com publishes 'One to five-year warranties' with all termite treatments. Patriot does not advertise an equivalent termite warranty.",
+      "competitor_ids": [
+        "COMP-22"
+      ],
+      "patriot_impact": "Patriot lacks the assurance anchor competitors use to close termite jobs.",
+      "source_url": "https://www.azpestcontrol.com/"
+    },
+    {
+      "id": "GAP-05",
+      "category": "positioning",
+      "description": "Wrong-market flag: guardianpest.com (WA track, COMP-03) is a Utah operator (Salt Lake City/Orem/Provo/Ogden). WA-market coverage not confirmed on-page; dilutes WA list quality.",
+      "competitor_ids": [
+        "COMP-03"
+      ],
+      "patriot_impact": "WA list contains an out-of-market entry; purge/replace recommended by Lewis.",
+      "source_url": "https://guardianpest.com/"
+    }
+  ],
+  "wins": [
+    {
+      "id": "WIN-01",
+      "category": "offer",
+      "description": "Transparent online pricing with four published tiers: Bronze $35.95/mo exterior-only, Silver $59.99/mo, Gold $79.99/mo, Platinum $95.94/mo. Competitor pricing is quote-only and opaque.",
+      "patriot_evidence": "patriotpest.pro/prices publishes all four tiers with plan breakdowns and checkout links.",
+      "source_url": "https://patriotpest.pro/prices"
+    },
+    {
+      "id": "WIN-02",
+      "category": "positioning",
+      "description": "Veteran-owned brand story: founded by U.S. Military Veteran Skyler Rose. No competitor on either track leads with a veteran/military-owned story.",
+      "patriot_evidence": "Home page: 'Patriot Pest Control is a veteran-owned pest control company', 'Founded by U.S. Military Veteran Skyler Rose. Over 10 years of experience. Licensed and insured.'",
+      "source_url": "https://patriotpest.pro/"
+    },
+    {
+      "id": "WIN-03",
+      "category": "feature",
+      "description": "Direct online booking via per-plan checkout links (checkout?plan=bronze|silver|gold). Competitors route bookings through quote forms and phone calls.",
+      "patriot_evidence": "prices page exposes checkout URLs per plan tier.",
+      "source_url": "https://patriotpest.pro/prices"
+    },
+    {
+      "id": "WIN-04",
+      "category": "positioning",
+      "description": "Multi-state coverage: Washington, Idaho, Oregon, and Arizona from one brand with dedicated phone lines.",
+      "patriot_evidence": "Title: 'Pest Control in Washington, Idaho, Oregon & Arizona'; (509) 471-5767 WA/ID/OR, (602) 755-8414 AZ.",
+      "source_url": "https://patriotpest.pro/"
+    },
+    {
+      "id": "WIN-05",
+      "category": "trust",
+      "description": "90-day warranty on all treatments plus 100% satisfaction guarantee published on home page.",
+      "patriot_evidence": "Home page: '90-day warranty on all treatments. 100% satisfaction guaranteed.'",
+      "source_url": "https://patriotpest.pro/"
+    }
+  ]
 }
