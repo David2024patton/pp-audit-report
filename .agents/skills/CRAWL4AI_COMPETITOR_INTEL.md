@@ -36,20 +36,34 @@ is not a gap analysis.
 
 # Procedure
 
-0. PARKED-DOMAIN DETECTION (before burning any crawl budget): a domain that is
-   for sale or parked is NOT a competitor, and its dossier must never read as
-   "competitor has nothing." Signals (all confirmed 2026-08-01):
+0. PARKED-DOMAIN / NON-COMPETITOR DETECTION (before burning any crawl
+   budget): a domain that is for sale, parked, an ad server, or a
+   wrong-market operator is NOT a competitor, and its dossier must never read
+   as "competitor has nothing." Signals (all confirmed 2026-08-01):
    - llms.txt states the domain is listed for sale (scorpioncontrol.com:
      "currently listed for sale on GoDaddy's aftermarket").
    - Parking lander markers: LANDER_SYSTEM=PW, ap:parking, minimal_text shells
-     (709 bytes, 0 chars visible), script-heavy shell with no content.
+     (709 bytes, 0 chars visible), script-heavy shell with no content,
+     window.location redirect to /lander (insectek.com).
+   - Domain-for-sale page title: "is for sale | HugeDomains" (spokanepestcontrol.com
+     at $4,895; also cropro.com, nwpest.com, phoenixpestcontrol.com,
+     scottsdalepestcontrol.com).
+   - Ad-server login instead of a company site: ppcinc.com title = "MAZMO Ad
+     Server" (Revive Adserver v5.2.0). HTTP 200 with zero pest content.
+   - WRONG-MARKET OPERATOR that transport probes mark "ok": guardianpest.com
+     serves Utah (SLC/Orem/Provo/Ogden), not the WA track. Always verify the
+     live page TITLE and service-area content, not just HTTP status. A 200 OK
+     from the wrong state is still a failed entry.
    - Akamai/anti-bot block on a domain whose own site cannot be read (verify
      with a browser-UA curl first: if browser UA returns real content, it is a
      bot wall, not a parked domain; mark manual fallback instead).
    - Verify the real company domain: altapest.com was parked, the real operator
      is altapestcontrol.com (and it did not serve the target market).
-   Purge parked domains from the list BEFORE crawling. Replace with fresh
-   probes (live title checks), never from memory.
+   Purge non-competitors from the list BEFORE crawling. Replace with fresh
+   probes (live title checks), never from memory. Content-layer verification
+   catches what transport probes miss: run the crawl, then audit every
+   crawl-ok dossier's title and content for parked/ad-server/wrong-market
+   signals before shipping.
 1. Confirm the container is healthy: `docker ps --filter name=crawl4ai`
    (restart policy: unless-stopped). If missing, deploy per the setup commands
    in CREDENTIALS.md.
