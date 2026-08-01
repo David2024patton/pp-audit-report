@@ -36,6 +36,20 @@ is not a gap analysis.
 
 # Procedure
 
+0. PARKED-DOMAIN DETECTION (before burning any crawl budget): a domain that is
+   for sale or parked is NOT a competitor, and its dossier must never read as
+   "competitor has nothing." Signals (all confirmed 2026-08-01):
+   - llms.txt states the domain is listed for sale (scorpioncontrol.com:
+     "currently listed for sale on GoDaddy's aftermarket").
+   - Parking lander markers: LANDER_SYSTEM=PW, ap:parking, minimal_text shells
+     (709 bytes, 0 chars visible), script-heavy shell with no content.
+   - Akamai/anti-bot block on a domain whose own site cannot be read (verify
+     with a browser-UA curl first: if browser UA returns real content, it is a
+     bot wall, not a parked domain; mark manual fallback instead).
+   - Verify the real company domain: altapest.com was parked, the real operator
+     is altapestcontrol.com (and it did not serve the target market).
+   Purge parked domains from the list BEFORE crawling. Replace with fresh
+   probes (live title checks), never from memory.
 1. Confirm the container is healthy: `docker ps --filter name=crawl4ai`
    (restart policy: unless-stopped). If missing, deploy per the setup commands
    in CREDENTIALS.md.
@@ -44,9 +58,11 @@ is not a gap analysis.
    must surface as "blocked, verify manually" in the dossier, NEVER as an empty
    dossier. An empty dossier must never read as "competitor has nothing."
    Known blocked/broken domains (re-verify each audit): terminix.com,
-   westernexterminator.com (403 bot-block), bugmanpestcontrol.com,
-   postfallspest.com, aptive.com (connection refused), ppcinc.com (HTTP only,
-   no HTTPS, crawl over http and note the TLS gap).
+   westernexterminator.com (curl UA-sensitive 403; browser UA returns 200),
+   bugmanpestcontrol.com, postfallspest.com, aptive.com (connection refused),
+   ppcinc.com (HTTP only, no HTTPS, crawl over http and note the TLS gap),
+   mantispest.com, foxpest.com (Akamai bot walls on real operators, manual
+   fallback via GBP).
 3. POST to the /crawl endpoint:
 
 ```bash
