@@ -54,3 +54,29 @@ curl -s -X POST http://127.0.0.1:11235/crawl \
 - The crawler container auto-restarts; no manual restart needed after reboot.
 - Deployed: unclecode/crawl4ai:latest (v0.9.2), port 11235, container name
   "crawl4ai", Docker v29.6.1.
+
+# Lessons from 2026-08-01 execution (PR #4, 40-domain crawl)
+
+1. Transport checks LIE. HTTP 200 is not a live competitor. Content crawl is the
+   only authority. Real findings from pass 1: insectek.com = GoDaddy parked
+   page ("is parked free, courtesy of GoDaddy.com"), ppcinc.com = MAZMO ad-server
+   login (redirect to adserver.mazmo.net), spokanepestcontrol.com = HugeDomains
+   for-sale page ($4,895). All three passed DNS + HTTP 200 probes. ALWAYS check
+   the raw markdown body for park/ad-server/for-sale markers before filing a
+   competitor as crawl-ok.
+2. Akamai bot walls are definitive, not retryable. HTTP 403 on every path with
+   "Blocked by anti-bot protection" in container logs = stop. Mark
+   crawl_status=blocked, crawl_error with the 403 evidence, evidence_method=manual.
+   Retries waste crawl budget and produce nothing.
+3. Claim discipline: every evidence claim string must be verified verbatim in the
+   raw markdown (case-insensitive substring check). Build the dossier with a
+   sentence-extraction harness that drops unverified claims, never infers.
+4. Write the builder as a Python file on disk, not a bash heredoc. Heredocs over
+   ~8KB truncate silently (hit twice). Split evidence data into a JSON file and
+   append in chunks; verify JSON parses before running.
+5. Report honest per-track math. A gate that fails (75% < 80% floor) with clean
+   rules 1/2/3/5/6 is correct output when parked domains are still on the list;
+   purge/replace is the list owner's call, not a rounding exercise.
+6. Manual fallback entries need a live http(s) source_url (domain root or GBP
+   link) and evidence_method=manual; blocked entries without crawl_error fail
+   rule 4.
