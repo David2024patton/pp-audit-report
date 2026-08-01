@@ -80,3 +80,18 @@ curl -s -X POST http://127.0.0.1:11235/crawl \
 6. Manual fallback entries need a live http(s) source_url (domain root or GBP
    link) and evidence_method=manual; blocked entries without crawl_error fail
    rule 4.
+7. Purge/replace loop (REV 3, 2026-08-01): when a gate fails on parked/error
+   entries, the list owner purges non-competitors and adds verified live
+   replacements. Re-crawl ONLY the new domains (others stay on disk), keep
+   existing evidence untouched, renumber/append new IDs, and update meta
+   counts (wa_count/az_count/domain_count) to match the file. Drop gaps that
+   reference purged competitors (GAP-05 died with guardianpest).
+8. Some claims fail verbatim checks due to markdown artifacts (line breaks in
+   stat blocks like "3,200+\nJobs Completed", curly apostrophes, **bold**
+   splits). Pull the exact raw string with a context grep and re-file the
+   claim verbatim - never relax the check. Example: northidaho stat blocks
+   are newline-separated; use the FAQ/footer strings that survive verbatim.
+9. After re-ship, ALWAYS re-run tools/validate_competitors.py and confirm
+   exit 0 before pushing. REV 3 flipped rule 4 from FAIL (75%) to PASS
+   (WA 85.0 / AZ 81.8 / overall 83.3) - the honest math clears once the
+   list is clean.
