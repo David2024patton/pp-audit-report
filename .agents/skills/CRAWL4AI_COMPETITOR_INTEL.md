@@ -68,17 +68,23 @@ curl -s -X POST http://127.0.0.1:11235/crawl \
 # Expected Output
 
 - Per-competitor dossier with crawl_status recorded: ok | blocked | error.
-  A blocked/error status surfaces as "verify manually," NEVER as an empty
-  dossier.
+  A blocked/error status carries crawl_error (e.g. "HTTP 403 bot-blocked",
+  "NXDOMAIN", "connection refused") plus a "verify manually" marker, NEVER an
+  empty dossier.
 - evidence items (services, pricing, guarantees, booking_paths, trust_signals)
-  with source_url on every single one
+  with source_url on every single one. Manual fallback (GBP/landing page
+  research) is allowed on blocked domains but MUST be marked
+  evidence_method="manual" with a live source_url.
 - gaps[] (what competitors have that Patriot lacks) and wins[] (where Patriot
   does it better), both source-traceable
 - digital_presence: seo_title, meta_description, h1, crawl_status, crawled_at
 - market tags per competitor: spokane-wa | phoenix-az | national
-- Both market tracks non-empty. domain_count >= 10 or the gate fails.
+- PER-TRACK GATE: wa_count >= 10 AND az_count >= 10 (domain_count >= 20).
+  A single-market list fails on arrival. Phoenix track absence is a hard fail.
+  Crawl success floor: crawl_status ok for >= 80 percent of competitors total.
 - All findings written to data/competitors.json per the locked Nash contract
-  (docs/DATA_SCHEMA.md, PR #2), validated by Nash before Rockwell renders.
+  (docs/DATA_SCHEMA.md, PR #2), validated by Nash against
+  docs/COMPETITOR_VALIDATION.md before Rockwell renders.
 
 # Notes
 
