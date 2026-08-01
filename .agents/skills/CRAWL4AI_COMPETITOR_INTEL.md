@@ -116,6 +116,21 @@ curl -s -X POST http://127.0.0.1:11235/crawl \
   (docs/DATA_SCHEMA.md, PR #2), validated by Nash against
   docs/COMPETITOR_VALIDATION.md before Rockwell renders.
 
+# Ship-to-live (proven path, 2026-08-01)
+
+1. Merge the plate render branch (PR: src/js/app.js, src/index.html,
+   src/css/main.css, docs/DESIGN_SPEC.md) and the validated-data branch
+   (data/competitors.json, docs/DATA_SCHEMA.md, docs/COMPETITOR_VALIDATION.md,
+   tools/validate_competitors.py, .agents/skills/) into master with --no-ff.
+   Do it in a separate worktree so in-progress local files are never touched.
+2. Re-run tools/validate_competitors.py against the MERGED data/competitors.json
+   and confirm verdict=validated before pushing.
+3. Push master; the Dokploy app auto-deploys on push (audit app
+   sxypKauqk2hdPJEU5U3YL, repo David2024patton/pp-audit-report, branch master).
+4. Verify LIVE, not on faith: GET /data/competitors.json returns 200 with
+   meta.validation_status=validated and the expected competitor count, and the
+   plate HTML/JS markers are present in the served page.
+
 # Notes
 
 - API token must be set at container creation time, otherwise the entrypoint
