@@ -1,5 +1,5 @@
 ---
-title: "Audit Command Center — Design Specification"
+title: "Audit Command Center - Design Specification"
 tags: [design, audit-site, patriot-pest, ui]
 status: active
 created: 2026-07-31
@@ -11,7 +11,7 @@ owner: Rockwell
 Interactive audit command center. Static HTML/CSS/JS, zero framework, zero build
 step. Renders live from the JSON data layer in /data.
 
-## Identity (frozen — do not remap)
+## Identity (frozen - do not remap)
 
 The app's tactical identity, carried over verbatim. Source of truth:
 patriot-pest-app/public/assets/styles.css.
@@ -54,17 +54,17 @@ badge text treatment used (ink on fill).
 
 ## Structure (four plates)
 
-1. **Scorecard console** — opens the page. Six domain dials render from
+1. **Scorecard console** - opens the page. Six domain dials render from
    scores.json. Numeric domains get an SVG ring that sweeps and a count-up
    numeral on first intersection. Security (score=null) gets a segmented
    severity bar instead of a ring. Subscores render as inline meters.
-2. **Verdict transmission** — "the machine is built, it is not turned on."
+2. **Verdict transmission** - "the machine is built, it is not turned on."
    Two panels: what holds (do_not_regress) vs what sleeps (zero counters that
    count up). Scroll story framing.
-3. **Findings explorer** — filter chips for severity / owner / gate / status,
+3. **Findings explorer** - filter chips for severity / owner / gate / status,
    each with live counts. Rows expand to a detail card: summary, impact,
    redacted bar (if redacted), ruling note, cross-ref jump tags.
-4. **Launch sequence** — six gates from gates.json with per-item checklists,
+4. **Launch sequence** - six gates from gates.json with per-item checklists,
    progress meters, LED status, hard rule, and go-now list.
 
 ## Redaction behavior
