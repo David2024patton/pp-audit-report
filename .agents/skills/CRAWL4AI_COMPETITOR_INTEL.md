@@ -14,16 +14,40 @@ owner (David, 2026-08-01) and is a permanent part of the audit SOP.
 
 # Inputs
 
-- List of competitor domains (top 10+ by local market share / search presence)
+- List of competitor domains (top 10+ per service market, see Market Tracks)
 - CRAWL4AI_API_TOKEN (in CREDENTIALS.md)
 - Crawl4AI endpoint: http://127.0.0.1:11235
+
+# Market Tracks (multi-market mandatory)
+
+The crawl list MUST be split by service market. A single-market crawl is a
+failed gate. Current tracks for Patriot (locked 2026-08-01):
+
+- **WA track** (Spokane + Coeur d'Alene + Hermiston): 10+ domains. Must include
+  Sprague Pest Solutions (spraguepest.com).
+- **AZ track** (Phoenix/Maricopa): 10+ domains, minimum. Must include
+  patriotpestaz.com (brand-conflict competitor) on EVERY audit. Verified AZ
+  domains: greenhomepest.com, azpestcontrol.com, burnspestelimination.com,
+  blueskypest.com, varsitypest.com, urbandesertpest.com, insectek.com,
+  nwexterminating.com, trulynolen.com, patriotpestaz.com.
+
+Phoenix track absence = gate FAIL. A gap analysis for a third of the business
+is not a gap analysis.
 
 # Procedure
 
 1. Confirm the container is healthy: `docker ps --filter name=crawl4ai`
    (restart policy: unless-stopped). If missing, deploy per the setup commands
    in CREDENTIALS.md.
-2. POST to the /crawl endpoint:
+2. Pre-flight every domain with DNS + HTTP(S) probe and record the per-domain
+   HTTP status BEFORE crawling. A status of 403 / NXDOMAIN / connection refused
+   must surface as "blocked, verify manually" in the dossier, NEVER as an empty
+   dossier. An empty dossier must never read as "competitor has nothing."
+   Known blocked/broken domains (re-verify each audit): terminix.com,
+   westernexterminator.com (403 bot-block), bugmanpestcontrol.com,
+   postfallspest.com, aptive.com (connection refused), ppcinc.com (HTTP only,
+   no HTTPS, crawl over http and note the TLS gap).
+3. POST to the /crawl endpoint:
 
 ```bash
 curl -s -X POST http://127.0.0.1:11235/crawl \
@@ -32,20 +56,29 @@ curl -s -X POST http://127.0.0.1:11235/crawl \
   -d '{"urls": ["https://competitor1.com", "https://competitor2.com", ...]}'
 ```
 
-3. Extract for each competitor: services offered, pricing/offers, guarantees,
+4. Extract for each competitor: services offered, pricing/offers, guarantees,
    contact/booking paths, trust signals (reviews, licenses, BBB), on-page SEO
    (titles, keywords), and anything Patriot does not currently offer.
-4. Diff against Patriot's current offerings (patriotpest.pro + app data).
-5. Write the gap analysis into the audit report data (competitors.json) so the
-   render layer (audit.patriotpest.pro) can display it.
+5. Diff against Patriot's current offerings (patriotpest.pro + app data).
+6. Write the gap analysis into data/competitors.json per the LOCKED contract in
+   docs/DATA_SCHEMA.md (PR #2). Every claim carries a source_url that resolves
+   to the competitor it is filed under. Absent from crawl output = absent from
+   the file. No fabricated intel, ever.
 
 # Expected Output
 
-- A per-competitor dossier: strengths, weaknesses, digital presence, threat level
-- A gap table: what competitors have that Patriot lacks (or does worse)
-- A "doing it better" confirmation: where Patriot wins
-- All findings written to data/competitors.json per the locked Nash schema,
-  with traceable sources (no fabricated intel)
+- Per-competitor dossier with crawl_status recorded: ok | blocked | error.
+  A blocked/error status surfaces as "verify manually," NEVER as an empty
+  dossier.
+- evidence items (services, pricing, guarantees, booking_paths, trust_signals)
+  with source_url on every single one
+- gaps[] (what competitors have that Patriot lacks) and wins[] (where Patriot
+  does it better), both source-traceable
+- digital_presence: seo_title, meta_description, h1, crawl_status, crawled_at
+- market tags per competitor: spokane-wa | phoenix-az | national
+- Both market tracks non-empty. domain_count >= 10 or the gate fails.
+- All findings written to data/competitors.json per the locked Nash contract
+  (docs/DATA_SCHEMA.md, PR #2), validated by Nash before Rockwell renders.
 
 # Notes
 
