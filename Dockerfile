@@ -1,5 +1,5 @@
 # ============================================================
-# Audit Command Center — Static nginx container
+# Audit Command Center - Static nginx container
 # Zero build step. Serves src/ as root, data/ and assets/ aliased.
 # ============================================================
 FROM nginx:1.27-alpine

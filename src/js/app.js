@@ -128,7 +128,7 @@
       if (d.score != null) {
         numHtml = '<span class="dial-num"><span class="dial-score" data-score="' + d.score + '">0.0</span><span class="dial-max">/' + d.max + '</span></span>';
       } else {
-        numHtml = '<span class="dial-num dial-num-qual" title="' + esc(d.score_display || '') + '">—</span>';
+        numHtml = '<span class="dial-num dial-num-qual" title="' + esc(d.score_display || '') + '">N/A</span>';
       }
       var subHtml = '';
       if (d.subscores && d.subscores.length) {
