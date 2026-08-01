@@ -3292,8 +3292,8 @@
     {
       "id": "WIN-01",
       "category": "offer",
-      "description": "Transparent online pricing with four published tiers: Bronze $35.95/mo exterior-only, Silver $59.99/mo, Gold $79.99/mo, Platinum $95.94/mo. Competitor pricing is quote-only and opaque.",
-      "patriot_evidence": "patriotpest.pro/prices publishes all four tiers with plan breakdowns and checkout links.",
+      "description": "Transparent online pricing published on the patriotpest.pro production site: four tiers (Bronze $35.95/mo exterior-only, Silver $59.99/mo, Gold $79.99/mo, Platinum $95.94/mo). Competitor pricing is quote-only and opaque. NOTE: the new app (test.patriotpest.pro) is quote-based pending David's pricing ruling; this win is scoped to the production site only.",
+      "patriot_evidence": "patriotpest.pro/prices (production site) publishes all four tiers with plan breakdowns and checkout links. Verified live 2026-08-01.",
       "source_url": "https://patriotpest.pro/prices"
     },
     {
