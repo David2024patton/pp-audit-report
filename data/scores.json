@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "project": "patriot-pest-app",
+    "audit_date": "2026-07-31",
+    "source_path": "G:/Mojo/patriot-pest-app",
+    "stack": "PHP 8.3 (strict_types), custom MVC, SQLite WAL, ~6400 LOC, 27 tables",
+    "verdict": "The machine is built. It is not turned on.",
+    "convergent_conclusion": "Excellent engineering, unfinished operations. No rewrite recommended. The gap is closable without rebuilding anything.",
+    "generated": "2026-08-01T00:02:40Z"
+  },
+  "domains": [
+    {
+      "id": "architecture",
+      "name": "Architecture",
+      "owner": "Edison",
+      "score": 6.1,
+      "max": 10,
+      "verdict": "Senior code, deployability 3/10",
+      "subscores": [
+        {
+          "name": "Architecture",
+          "score": 7.0
+        },
+        {
+          "name": "Code Quality",
+          "score": 8.0
+        },
+        {
+          "name": "Data Layer",
+          "score": 7.5
+        },
+        {
+          "name": "Integrations",
+          "score": 5.0
+        },
+        {
+          "name": "Deployability",
+          "score": 3.0
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend & Conversion",
+      "owner": "Rockwell",
+      "score": 6.0,
+      "max": 10,
+      "verdict": "Strong craft, one launch blocker",
+      "subscores": [
+        {
+          "name": "Mobile Responsiveness",
+          "score": 7.0
+        },
+        {
+          "name": "Conversion Paths",
+          "score": 6.0
+        },
+        {
+          "name": "Accessibility",
+          "score": 5.0
+        },
+        {
+          "name": "Consistency vs Frozen Baseline",
+          "score": 3.0
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "owner": "Turing",
+      "score": null,
+      "max": 10,
+      "score_display": "1 critical, 4 high",
+      "verdict": "Secure core, dev box holding prod secrets",
+      "severity_counts": {
+        "critical": 1,
+        "high": 4,
+        "medium": 5,
+        "low": 4
+      }
+    },
+    {
+      "id": "data",
+      "name": "Data & Analytics",
+      "owner": "Nash",
+      "score": 4.0,
+      "max": 10,
+      "verdict": "Plumbing excellent, nothing flowing",
+      "subscores": [
+        {
+          "name": "Schema Quality",
+          "score": 8.0
+        },
+        {
+          "name": "Data Population",
+          "score": 2.0
+        },
+        {
+          "name": "Analytics Readiness",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "Content Accuracy",
+      "owner": "Hunter",
+      "score": 6.5,
+      "max": 10,
+      "verdict": "Strong IPM voice, taxonomy + compliance gaps"
+    },
+    {
+      "id": "gtm",
+      "name": "Go-To-Market",
+      "owner": "Hamilton",
+      "score": 3.0,
+      "max": 10,
+      "verdict": "Architecture 8/10, operability 1/10",
+      "subscores": [
+        {
+          "name": "Marketing Architecture",
+          "score": 8.0
+        },
+        {
+          "name": "Marketing Operability",
+          "score": 1.0
+        }
+      ]
+    }
+  ],
+  "overall_average": 5.1,
+  "do_not_regress": [
+    "Prepared statements everywhere",
+    "OTP hashed at rest + timing-safe verify",
+    "Hardened sessions (strict mode, httponly, SameSite)",
+    "CSRF wired on all state-changing forms",
+    "Clean schema (zero FK violations, WAL)",
+    "Idempotent bin scripts",
+    "Exceptional code documentation",
+    "IPM terminology",
+    "Veteran-owned positioning"
+  ]
+}

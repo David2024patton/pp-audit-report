@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "hard_rule": "$0 paid media until Gates 0-3 closed.",
+    "go_now": [
+      "A2P 10DLC registration",
+      "GBP optimization (WA + AZ)",
+      "Google Ads draft build",
+      "Staged content production"
+    ],
+    "generated": "2026-08-01T00:02:40Z"
+  },
+  "gates": [
+    {
+      "id": 0,
+      "name": "Production Foundation",
+      "owner": "Edison",
+      "status": "pending",
+      "description": "Git baseline commit, production Dockerfile (nginx + php-fpm, non-root), .dockerignore, SSL verify on FieldRoutes, /health endpoint, backup cron.",
+      "items": [
+        {
+          "text": "Initial git commit (full working tree)",
+          "done": false
+        },
+        {
+          "text": "Production Dockerfile (nginx + php-fpm, multi-stage, non-root, healthcheck)",
+          "done": false
+        },
+        {
+          "text": ".dockerignore (exclude .env, .git, database/*.db, storage/logs)",
+          "done": false
+        },
+        {
+          "text": "Fix SSL verification in FieldRoutes client",
+          "done": false
+        },
+        {
+          "text": "/health endpoint returning 200 + JSON",
+          "done": false
+        },
+        {
+          "text": "SQLite backup cron",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Security Hardening",
+      "owner": "Turing + Edison",
+      "status": "pending",
+      "description": "Flip to production env, rotate all secrets, gate OTP codes out of logs, rate-limit OTP issue endpoint, HTTPS + HSTS, X-Forwarded-Proto handling.",
+      "items": [
+        {
+          "text": "APP_ENV=production, APP_DEBUG=false",
+          "done": false
+        },
+        {
+          "text": "Rotate Twilio + FieldRoutes credentials",
+          "done": false
+        },
+        {
+          "text": "Gate OTP codes out of plaintext logs",
+          "done": false
+        },
+        {
+          "text": "Rate-limit OTP issue endpoint",
+          "done": false
+        },
+        {
+          "text": "HTTPS + HSTS + X-Forwarded-Proto trust",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Measurement",
+      "owner": "Edison + Nash",
+      "status": "pending",
+      "description": "GA4 ID + enable analytics, wire 4 conversion events, Meta Pixel, Clarity, Consent Mode v2. No paid media without tracking.",
+      "items": [
+        {
+          "text": "Set GTAG_ID + flip ANALYTICS_ENABLED=true",
+          "done": false
+        },
+        {
+          "text": "Wire generate_lead conversion event",
+          "done": false
+        },
+        {
+          "text": "Wire quote_request engagement event",
+          "done": false
+        },
+        {
+          "text": "Wire portal_login engagement event",
+          "done": false
+        },
+        {
+          "text": "Install Meta Pixel",
+          "done": false
+        },
+        {
+          "text": "Install Microsoft Clarity",
+          "done": false
+        },
+        {
+          "text": "Implement Consent Mode v2",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Conversion Paths",
+      "owner": "Edison + Rockwell",
+      "status": "pending",
+      "description": "Fix geo phone routing on 13 hardcoded templates (AZ-to-Spokane leak on ~80% of surface), persist contact-form leads, add quote CTA, mobile sticky call bar, skip link + focus ring.",
+      "items": [
+        {
+          "text": "Fix geo routing on 13 hardcoded tel: templates",
+          "done": false
+        },
+        {
+          "text": "Persist contact-form leads (currently logs only)",
+          "done": false
+        },
+        {
+          "text": "Add quote CTA to nav shell",
+          "done": false
+        },
+        {
+          "text": "Mobile sticky call bar on marketing layout",
+          "done": false
+        },
+        {
+          "text": "Skip link + global focus-visible ring",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Compliance Engine",
+      "owner": "Edison + Turing",
+      "status": "pending",
+      "description": "Build send gate, unsubscribe endpoint, STOP handling, DNC enforcement, E.164 normalization, then register A2P 10DLC. No SMS/email until carrier campaign approved.",
+      "items": [
+        {
+          "text": "Central send gate (hard-refuse is_no_call=1)",
+          "done": false
+        },
+        {
+          "text": "Public unsubscribe endpoint + STOP keyword handling",
+          "done": false
+        },
+        {
+          "text": "DNC enforcement on all send paths",
+          "done": false
+        },
+        {
+          "text": "E.164 phone normalization on sync",
+          "done": false
+        },
+        {
+          "text": "A2P 10DLC carrier registration (1-3 week external clock)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Content & Brand",
+      "owner": "Hunter + Twain + Rockwell + David",
+      "status": "pending",
+      "description": "Taxonomy corrections, scientific names, license numbers, qualified safety language, AZ pest gaps, seasonal alerts, blog/seasonal content, visual identity freeze.",
+      "items": [
+        {
+          "text": "Fix arachnid/insectivore taxonomy (scorpions, spiders, ticks, moles)",
+          "done": false
+        },
+        {
+          "text": "Correct scientific names (flies, hornets, mosquitoes, crickets, ants)",
+          "done": false
+        },
+        {
+          "text": "Add WA + AZ license numbers to all advertising",
+          "done": false
+        },
+        {
+          "text": "Qualify pesticide safety claims with re-entry language",
+          "done": false
+        },
+        {
+          "text": "Resolve pricing transparency claim vs no-prices contradiction",
+          "done": false
+        },
+        {
+          "text": "Add AZ-specific pests (palo verde beetles, kissing bugs, roof rats)",
+          "done": false
+        },
+        {
+          "text": "Visual identity ruling (olive/orange vs navy/amber)",
+          "done": false
+        }
+      ]
+    }
+  ]
+}

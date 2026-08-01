@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUDIT.SYS // Patriot Pest Control — Six Audits, One Verdict</title>
+<meta name="description" content="Live audit command center for patriot-pest-app: six independent audits, interactive findings explorer, and the six-gate launch sequence.">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="ambient" aria-hidden="true">
+  <div class="grid-layer"></div>
+  <div class="topo-layer"></div>
+  <div class="grain"></div>
+  <div class="scanline"></div>
+</div>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-cell mono"><span class="telemetry-dot" aria-hidden="true"></span>AUDIT.SYS&nbsp;//&nbsp;PATRIOT&nbsp;PEST&nbsp;CONTROL</div>
+  <nav class="topnav" aria-label="Report sections">
+    <a class="mono" href="#scorecard">SCORECARD</a>
+    <a class="mono" href="#verdict">VERDICT</a>
+    <a class="mono" href="#findings">FINDINGS</a>
+    <a class="mono" href="#launch">LAUNCH&nbsp;SEQ</a>
+  </nav>
+  <div class="topbar-cell mono topbar-clock"><span id="utc-clock" aria-label="Coordinated universal time">--:--:--Z</span></div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 01 // COMMAND-CENTER SCORECARD ============ -->
+  <section id="scorecard" class="console" aria-labelledby="scorecard-h">
+    <div class="wrap">
+      <p class="eyebrow mono rv">SIX INDEPENDENT AUDITS <span class="eyebrow-sep">//</span> FILED 2026-07-31 <span class="eyebrow-sep">//</span> TARGET: patriot-pest-app</p>
+      <div class="console-head">
+        <h1 id="scorecard-h" class="rv" data-d="1">SIX AUDITS.<br><em>ONE VERDICT.</em></h1>
+        <aside class="sysreadout mono rv" data-d="2" aria-label="System under audit">
+          <p class="sysreadout-title">// SYSTEM UNDER AUDIT</p>
+          <dl>
+            <div><dt>STACK</dt><dd>PHP 8.3 · custom MVC · SQLite WAL</dd></div>
+            <div><dt>SCOPE</dt><dd>~6,400 LOC · 27 tables · 17 templates</dd></div>
+            <div><dt>AUTH</dt><dd>passwordless OTP · customer portal</dd></div>
+            <div><dt>FRAMEWORK</dt><dd>none. zero dependencies.</dd></div>
+          </dl>
+          <p class="stamp stamp-orange">MACHINE BUILT</p>
+        </aside>
+      </div>
+      <p class="lead rv" data-d="3">Architecture, frontend, security, data, content, go-to-market. Six auditors read the same codebase and converged on one conclusion. The dials below render live from the audit data layer.</p>
+      <div class="dials" id="dials" role="list" aria-label="Audit domain scores"></div>
+      <p class="overall mono" id="overall-readout"></p>
+    </div>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <!-- ============ 02 // VERDICT TRANSMISSION ============ -->
+  <section id="verdict" class="transmission" aria-labelledby="verdict-h">
+    <div class="wrap">
+      <p class="eyebrow mono rv">TRANSMISSION 01 <span class="eyebrow-sep">//</span> THE CONVERGENT READ</p>
+      <h2 id="verdict-h" class="verdict-line rv" data-d="1">THE MACHINE<br>IS <em>BUILT.</em></h2>
+
+      <div class="tx-grid">
+        <div class="tx-panel tx-holds rv" data-d="2">
+          <p class="tx-panel-title mono">// WHAT HOLDS — DO NOT REGRESS</p>
+          <ul id="holds-list" class="tx-list"></ul>
+        </div>
+        <div class="tx-panel tx-dark rv" data-d="3">
+          <p class="tx-panel-title mono">// WHAT SLEEPS — NOT TURNED ON</p>
+          <ul class="tx-list">
+            <li><span class="tx-num mono" data-count="0">0</span><span>conversion events firing. Analytics completely dark.</span></li>
+            <li><span class="tx-num mono" data-count="0">0</span><span>reactivation sends ever executed. The engine is hollow.</span></li>
+            <li><span class="tx-num mono" data-count="0">0</span><span>git commits. No history, no rollback, no tripwire.</span></li>
+            <li><span class="tx-num mono" data-count="13">0</span><span>templates route Arizona callers to the Washington line.</span></li>
+            <li><span class="tx-num mono" data-count="9">0</span><span>days stale: the CRM sync last ran by hand.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="verdict-line verdict-line-2 rv">IT IS NOT<br><em>TURNED ON.</em></h2>
+      <p class="lead tx-conclusion rv" data-d="1">Excellent engineering, unfinished operations. No rewrite recommended. The gap between <strong>exists</strong> and <strong>works</strong> is six gates, and it is closable without rebuilding a single thing.</p>
+    </div>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <!-- ============ 03 // FINDINGS EXPLORER ============ -->
+  <section id="findings" class="explorer" aria-labelledby="findings-h">
+    <div class="wrap">
+      <p class="eyebrow mono rv">FINDINGS EXPLORER <span class="eyebrow-sep">//</span> LIVE FROM DATA LAYER</p>
+      <div class="explorer-head">
+        <h2 id="findings-h" class="rv" data-d="1">EVERY DEFECT,<br><em>ON THE BOARD.</em></h2>
+        <p class="mono explorer-count rv" data-d="2" aria-live="polite"><span id="fx-count">--</span> FINDINGS <span class="eyebrow-sep">//</span> <span id="fx-redacted-note">security specifics sealed until fixed</span></p>
+      </div>
+
+      <div class="filters rv" data-d="3" role="group" aria-label="Filter findings">
+        <fieldset class="filter-set">
+          <legend class="mono">SEVERITY</legend>
+          <div class="chips" id="filter-severity"></div>
+        </fieldset>
+        <fieldset class="filter-set">
+          <legend class="mono">OWNER</legend>
+          <div class="chips" id="filter-owner"></div>
+        </fieldset>
+        <fieldset class="filter-set">
+          <legend class="mono">GATE</legend>
+          <div class="chips" id="filter-gate"></div>
+        </fieldset>
+        <fieldset class="filter-set">
+          <legend class="mono">STATUS</legend>
+          <div class="chips" id="filter-status"></div>
+        </fieldset>
+        <button class="btn btn-ghost mono filter-clear" id="filter-clear" type="button">CLEAR FILTERS</button>
+      </div>
+
+      <div class="board-head mono rv" aria-hidden="true">
+        <span class="bh-id">ID</span><span class="bh-sev">SEV</span><span class="bh-title">FINDING</span><span class="bh-owner">OWNER</span><span class="bh-gate">GATE</span><span class="bh-status">STATUS</span>
+      </div>
+      <div id="finding-list" class="finding-list" role="list" aria-label="Findings"></div>
+      <p class="mono empty-state" id="fx-empty" hidden>// NO FINDINGS MATCH THIS FILTER SET. ADJUST PARAMETERS.</p>
+    </div>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <!-- ============ 04 // LAUNCH SEQUENCE ============ -->
+  <section id="launch" class="launch" aria-labelledby="launch-h">
+    <div class="wrap">
+      <p class="eyebrow mono rv">LAUNCH SEQUENCE <span class="eyebrow-sep">//</span> SIX GATES TO IGNITION</p>
+      <div class="launch-head">
+        <h2 id="launch-h" class="rv" data-d="1">TURN IT ON,<br><em>GATE BY GATE.</em></h2>
+        <p class="lead rv" data-d="2">The gap between exists and works is six gates. Four are engineering. One is an owner decision. One is an external carrier clock. Progress below renders live from the gate checklist.</p>
+      </div>
+      <div class="gate-pipeline" id="gate-pipeline" role="list" aria-label="Launch gates"></div>
+      <div class="hard-rule rv">
+        <p class="mono hard-rule-tag">// HARD RULE</p>
+        <p class="hard-rule-text" id="hard-rule-text"></p>
+      </div>
+      <div class="go-now rv" data-d="1">
+        <p class="mono go-now-tag">// GO NOW — NO DEPENDENCY</p>
+        <ul class="go-now-list" id="go-now-list"></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <div class="colophon-grid">
+      <div>
+        <p class="mono colophon-brand">AUDIT.SYS <span class="eyebrow-sep">//</span> PATRIOT PEST CONTROL</p>
+        <p class="colophon-note">Six independent audits of patriot-pest-app. Rendered live from structured JSON. When a finding closes, the board updates on next fetch. No rebuild.</p>
+      </div>
+      <div>
+        <p class="mono colophon-h">DATA LAYER</p>
+        <p class="mono colophon-meta" id="colophon-meta">scores.json · gates.json · findings.json</p>
+      </div>
+      <div>
+        <p class="mono colophon-h">AUDITORS</p>
+        <p class="colophon-note">Edison · Rockwell · Turing · Nash · Hunter · Hamilton. Consolidated verdict filed 2026-07-31.</p>
+      </div>
+    </div>
+    <p class="mono colophon-verdict" id="colophon-verdict"></p>
+  </div>
+</footer>
+
+<noscript><p class="noscript-note">This report renders from a live JSON data layer and needs JavaScript. The source audits are filed in full in the workspace under RESEARCH/PP_APP_AUDIT/.</p></noscript>
+<script src="js/app.js"></script>
+</body>
+</html>
