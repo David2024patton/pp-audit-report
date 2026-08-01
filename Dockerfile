@@ -10,7 +10,7 @@ COPY data/ /app/data/
 COPY assets/ /app/assets/
 
 # nginx config
-COPY deploy/nginx.conf /etc/nginx/http.d/default.conf
+COPY deploy/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
